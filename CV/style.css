@@ -1,0 +1,146 @@
+body{
+    min-height: 100vh;
+    margin:0;
+    text-align: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+  
+  .nav-link{
+    overflow: hidden;
+    background-image: linear-gradient(45deg, rgb(156,14,156), midnightblue);
+  }
+  
+  .nav-link a {
+    float: left;
+    color: #0f0c0c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav-link a:hover {
+    background-color:#fbc2eb 1000%, #a6c1ee 100%;
+    color: black;
+  }
+  .nav-link h3{
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+   
+  }
+  .profile{
+      position:relative;
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      padding-bottom:20px;
+      border-bottom: 3px solid rgba(255,255,255,0.2);
+
+  }
+  .profile .image{
+      position: relative;
+      width:300px;
+      height:300px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .profile .image img{
+    position:absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}
+.profile h2 {
+    font-size: 5em;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 800;
+}
+.profile h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.contact{
+    padding-top:5px;
+}
+.contactTitle{
+    font-weight: 800;
+    font-size:2.5em;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    position:relative;
+    list-style: none;
+    margin:10px 0;
+    cursor:pointer;
+
+}
+.contact span{
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.school{
+    padding-top:5px;
+}
+.schoolTitle{
+    font-weight: 800;
+    font-size:2.5em;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+.school ul{
+    position: relative;
+}
+.school ul li{
+    position:relative;
+    list-style: none;
+    margin:10px 0;
+    cursor:pointer;
+
+}
+.school span{
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.experience{
+    padding-top:5px;
+}
+.experienceTitle{
+    font-weight: 800;
+    font-size:2.5em;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+.experience ul{
+    position: relative;
+}
+.experience ul li{
+    position:relative;
+    list-style: none;
+    margin:10px 0;
+    cursor:pointer;
+
+}
+.experience span{
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 800;
+}
