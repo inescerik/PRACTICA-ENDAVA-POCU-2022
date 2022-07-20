@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <title>My CV</title>
+    
+</head>
+
+<body>
+    <div class="nav-link">
+        <a><h2>Curriculum Vitae</h2></a>
+         <a class="active" href="index.html"><h3>Home</h3></a>
+         <a href="form-login.html"><h3>Login</h3></a>
+         <a href="form-contact.html"><h3>Contact</h3></a>
+     </div>
+    
+    </div>
+    <div class="register">
+       <h3 class="registerTitle">Register</h3>
+
+        <form action="./Form-register.html" method="post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="username"pattern="[A-Za-z]{4,10}"
+            title="The name needs to be between 4 and 10 letters">
+            <br>
+    
+    
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{6,12}$"
+            title="The passwords needs:At least 1 Uppercase, at least 1 Lowercase, at least 1 Number, at least 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+            Min 6 chars and Max 12 chars">
+            <br>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="email" 
+            title="asd">
+            <br>
+    
+            <label for="date">Your Date of Birth</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+    
+            <label for="adress">Your adress</label>
+            <input type="text" id="adress" name="adress"  placeholder="adress" required>
+            <br>
+    
+            <input class="submitButton" type="submit" value="Register">
+    
+    
+        </form>
+   
+      </div>
+     
+</body>
+</html>

@@ -144,3 +144,212 @@ body{
     text-align: center;
     font-weight: 800;
 }
+
+.login{
+    padding-top:5px;
+}
+.loginTitle{
+    font-weight: 800;
+    font-size:2.5em;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+
+.login input[type=text] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.login input[type=password] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.login label {
+    font-size: 1.25em;
+    text-align: center;
+    padding:5px 15px; 
+    color: #6a0963;
+    font-weight: bold;
+    float: center;
+  
+  }
+  .login label:after { content: ": " }
+
+.login input[type=submit] {
+    color: purple;
+    padding: 12px 23px;
+    font-size: 1em;
+    position: absolute;
+    left: 800px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    top: 380px;
+
+}
+
+
+
+
+.register{
+    padding-top:5px;
+}
+.registerTitle{
+    font-weight: 800;
+    font-size:2.5em;
+    letter-spacing: 1px;
+    margin-bottom:30px;
+}
+
+.register input[type=text] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.register input[type=password] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.register input[type=email] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.register input[type=date] {
+    font-size: 1.5em;
+    margin-top:20px;
+    text-align: absolute;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.register label {
+    font-size: 1.25em;
+    text-align: center;
+    padding:5px 15px; 
+    color: #6a0963;
+    font-weight: bold;
+    float: center;
+    position:relative;
+  
+  }
+  .register label:after { content: ": " }
+
+.register input[type=submit] {
+    color: purple;
+    padding: 12px 23px;
+    font-size: 1em;
+    position: absolute;
+    left: 800px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    top: 600px;
+
+}
+
+
+
+.contact{
+    padding-top:0px;
+}
+.contactTitle{
+    font-size:1.7em;
+    letter-spacing: 1px;
+    margin-bottom:0px;
+}
+
+.contact input[type=text] {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contact input[type=password] {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contact input[type=email] {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contact input[type=date] {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: absolute;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contact textarea {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: absolute;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.contact label {
+    font-size: 1.25em;
+    margin-top:10px;
+    text-align: center;
+    padding:5px 15px; 
+    color: #6a0963;
+    font-weight: bold;
+    float: center;
+    position:relative;
+  
+  }
+  .contact label:after { content: ": " }
+
+.contact input[type=submit] {
+    color: purple;
+    padding: 12px 23px;
+    font-size: 0.75em;
+    position: absolute;
+    left: 800px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+    top: 800px;
+
+}
