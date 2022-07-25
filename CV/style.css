@@ -1,14 +1,16 @@
 body{
-    min-height: 100vh;
     margin:0;
-    text-align: center;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    min-height: 100vh;
+    background-image: linear-gradient(#fbc2eb 3%, #a6c1ee 100%);
+    
 }
 
-  
-  .nav-link{
+
+.nav-link{
+
     overflow: hidden;
-    background-image: linear-gradient(45deg, rgb(156,14,156), midnightblue);
+    top:0;
+    background-image: linear-gradient(50deg,#770f82, #9f1cb6, midnightblue);
   }
   
   .nav-link a {
@@ -18,19 +20,76 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+
   }
-  
-  .nav-link a:hover {
-    background-color:#fbc2eb 1000%, #a6c1ee 100%;
-    color: black;
-  }
-  .nav-link h3{
-    font-size: 1.5em;
-    margin-top:20px;
+.logo{
+    float:left;
+    height:100px;
+    left:20px;
     text-align: center;
-   
-  }
-  .profile{
+}
+
+
+  .intro-page p{
+        
+    color:#6a0963;
+    margin-top: 70px;
+    font-size: 120px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+}
+.intro-page h3{
+    color: purple;
+    padding: 6px 30px;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.intro-page .login{
+    color: purple;
+    padding: 12px 23px;
+    font-size: 0.9em;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
+    
+}
+
+.intro-page .register{
+    color: purple;
+    padding: 12px 23px;
+    font-size: 0.9em;
+    position: absolute;
+    left: 720px;
+    top: 500px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
+}
+.intro-page .aboutUS{
+    
+    color: purple;
+    padding: 12px 23px;
+    font-size: 0.9em;
+    position: absolute;
+    left: 950px;
+    top: 500px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
+    
+}
+  .profile-image{
       position:relative;
       display:flex;
       flex-direction: column;
@@ -39,14 +98,14 @@ body{
       border-bottom: 3px solid rgba(255,255,255,0.2);
 
   }
-  .profile .image{
+  .profile-image .image{
       position: relative;
       width:300px;
       height:300px;
       border-radius: 50%;
       overflow: hidden;
   }
-  .profile .image img{
+  .profile-image .image img{
     position:absolute;
     top: 0;
     left:0;
@@ -54,13 +113,13 @@ body{
     height: 100%;
     object-fit:cover;
 }
-.profile h2 {
+.profile-image h2 {
     font-size: 5em;
     margin-top:20px;
     text-align: center;
     font-weight: 800;
 }
-.profile h2 {
+.profile-image h2 {
     font-size: 2.5em;
     font-weight: 400;
 }
@@ -90,8 +149,9 @@ body{
     text-align: center;
     font-weight: 800;
 }
-
-
+.studyBody {
+    background-image: url('StudyBackgr.jpg');
+}
 .school{
     padding-top:5px;
 }
@@ -118,7 +178,13 @@ body{
     font-weight: 800;
 }
 
+.experienceBody{
+    background-image: url('ExperienceBackgr.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
+}
 .experience{
     padding-top:5px;
 }
