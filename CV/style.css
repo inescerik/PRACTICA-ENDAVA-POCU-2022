@@ -1,421 +1,259 @@
-body{
+/* @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+*{
     margin:0;
-    min-height: 100vh;
-    background-image: linear-gradient(#fbc2eb 3%, #a6c1ee 100%);
-    
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --clr-primary: #A8D4D3;
+    /* --clr-secondary:#E7C8AC; */
+    --clr-secondary:#82cbca;
+
+}
+body{
+    background-color: var(--clr-primary);
 }
 
-
-.nav-link{
-
-    overflow: hidden;
-    top:0;
-    background-image: linear-gradient(50deg,#770f82, #9f1cb6, midnightblue);
-  }
-  
-  .nav-link a {
-    float: left;
-    color: #0f0c0c;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-  }
-.logo{
-    float:left;
-    height:100px;
-    left:20px;
-    text-align: center;
-}
-
-
-  .intro-page p{
-        
-    color:#6a0963;
-    margin-top: 70px;
-    font-size: 120px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-weight: 800;
-    -webkit-font-smoothing: antialiased;
-}
-.intro-page h3{
-    color: purple;
-    padding: 6px 30px;
-    font-size: 0.9em;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-}
-.intro-page .login{
-    color: purple;
-    padding: 12px 23px;
-    font-size: 0.9em;
+header, footer{
     position: absolute;
-    left: 500px;
-    top: 500px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
-    
-}
-
-.intro-page .register{
-    color: purple;
-    padding: 12px 23px;
-    font-size: 0.9em;
-    position: absolute;
-    left: 720px;
-    top: 500px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
-}
-.intro-page .aboutUS{
-    
-    color: purple;
-    padding: 12px 23px;
-    font-size: 0.9em;
-    position: absolute;
-    left: 950px;
-    top: 500px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    box-shadow: rgb(0 0 0 / 20%) 3px 8px 20px 5px, rgb(0 0 0 / 19%) 3px 8px 20px 5px;
-    
-}
-  .profile-image{
-      position:relative;
-      display:flex;
-      flex-direction: column;
-      align-items:center;
-      padding-bottom:20px;
-      border-bottom: 3px solid rgba(255,255,255,0.2);
-
-  }
-  .profile-image .image{
-      position: relative;
-      width:300px;
-      height:300px;
-      border-radius: 50%;
-      overflow: hidden;
-  }
-  .profile-image .image img{
-    position:absolute;
-    top: 0;
-    left:0;
+    background-color: var(--clr-secondary);
     width:100%;
+    color:white;  
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 35px;
+}
+.logo{
+    color:white;
+    font-size: 38px;
+}
+span{
+    color: #ea1538;
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:red;
+    transition:.3s;
+    
+}
+.first_main{
+    text-align: center;
+    color:white;
+    padding-top:250px;
+}
+.first_main h1{
+
+    font-family: 'Kaushan Script', cursive;
+    
+    font-size:100px;
+
+}
+.first_main p{
+
+    font-size:50px;
+    font-weight: bold;
+
+}
+.first_main a{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+.fmain_buttons{
+    margin:70px auto 0;
+}
+.fmain_buttons a{
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    margin:0 10px;
+    padding:12px 0;
+    color:white;
+    border: .5px solid black;
+    position:relative;
+    z-index: 1;
+    transition:color 0.5s;
+
+
+}
+.fmain_buttons a span{
+    width:0%;
     height: 100%;
-    object-fit:cover;
-}
-.profile-image h2 {
-    font-size: 5em;
-    margin-top:20px;
-    text-align: center;
-    font-weight: 800;
-}
-.profile-image h2 {
-    font-size: 2.5em;
-    font-weight: 400;
-}
+    position:absolute;
+    top:0;
+    left:0;
+    background: red;
+    z-index: -1;
+    transition: 0.5s;
 
-.contact{
-    padding-top:5px;
 }
-.contactTitle{
-    font-weight: 800;
-    font-size:2.5em;
-    letter-spacing: 1px;
-    margin-bottom:30px;
+.fmain_buttons a:hover span{
+    width: 100%;
 }
-.contact ul{
+.fmain_buttons a:hover {
+    color:white;
+}
+footer{
+    bottom: 0;
+    width:100%;
+    background: var(--clr-secondary);
+    min-height: 100px;
+    padding: 20px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social_icon{
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
 }
-.contact ul li{
-    position:relative;
-    list-style: none;
-    margin:10px 0;
-    cursor:pointer;
+footer .social_icon li{
+list-style: none;
 
 }
-.contact span{
-    font-size: 1.5em;
-    margin-top:20px;
+footer .social_icon li a{
+    font-size:30px; 
+    color:white;
+    margin:0 10px;
+    display:inline-block;
+    transition: 0.5s;
+
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer p{
+    color:white;
     text-align: center;
-    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
-.studyBody {
-    background-image: url('StudyBackgr.jpg');
-}
-.school{
-    padding-top:5px;
-}
-.schoolTitle{
-    font-weight: 800;
-    font-size:2.5em;
-    letter-spacing: 1px;
-    margin-bottom:30px;
-}
-.school ul{
-    position: relative;
-}
-.school ul li{
-    position:relative;
-    list-style: none;
-    margin:10px 0;
-    cursor:pointer;
+@media screen and (min-width:801px) and (max-width:1300px){
 
-}
-.school span{
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    font-weight: 800;
-}
+    .logo{
+        font-size: 25px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:inline-block;
+        padding: 5px 5px;
+    }
+    .first_main h1{
 
-.experienceBody{
-    background-image: url('ExperienceBackgr.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+        font-family: 'Kaushan Script', cursive;
+        font-size:80px;
+    
+    }
+    .first_main p{
+    
+        font-size:25px;
+        
+    
+    }
+    .fmain_buttons a{
+        width: 120px;
+        padding:10px 0;
+    }
+    footer .social_icon li a{
+        font-size:30px; 
 
+    
+    }
+    footer p{
+        font-size: 10px;
+    }
 }
-.experience{
-    padding-top:5px;
-}
-.experienceTitle{
-    font-weight: 800;
-    font-size:2.5em;
-    letter-spacing: 1px;
-    margin-bottom:30px;
-}
-.experience ul{
-    position: relative;
-}
-.experience ul li{
-    position:relative;
-    list-style: none;
-    margin:10px 0;
-    cursor:pointer;
+@media screen and (min-width:501px) and (max-width:800px){
 
-}
-.experience span{
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    font-weight: 800;
-}
+    .logo{
+        font-size: 18px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:inline-block;
+        padding: 2px 2px;
+    }
+    .first_main h1{
 
-.login{
-    padding-top:5px;
-}
-.loginTitle{
-    font-weight: 800;
-    font-size:2.5em;
-    letter-spacing: 1px;
-    margin-bottom:30px;
-}
+        font-family: 'Kaushan Script', cursive;
+        font-size:70px;
+    
+    }
+    .first_main p{
+    
+        font-size:20px;
+    
+    }
+    .fmain_buttons a{
+        width: 100px;
+        padding:8px 0;
+    }
+    footer .social_icon li a{
+        font-size:20px; 
 
-.login input[type=text] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.login input[type=password] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.login label {
-    font-size: 1.25em;
-    text-align: center;
-    padding:5px 15px; 
-    color: #6a0963;
-    font-weight: bold;
-    float: center;
-  
-  }
-  .login label:after { content: ": " }
-
-.login input[type=submit] {
-    color: purple;
-    padding: 12px 23px;
-    font-size: 1em;
-    position: absolute;
-    left: 800px;
-    background-color: rgb(231, 231, 231);
-    border-radius: 12px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
-    top: 380px;
-
+    
+    }
+    footer p{
+        font-size: 9px;
+    }
 }
 
 
+@media screen and (max-width:500px){
 
+    .logo{
+        font-size: 20px;
+    }
+    nav ul li{
+        display:none;
+    }
+    .first_main h1{
 
-.register{
-    padding-top:5px;
-}
-.registerTitle{
-    font-weight: 800;
-    font-size:2.5em;
-    letter-spacing: 1px;
-    margin-bottom:30px;
-}
+        font-family: 'Kaushan Script', cursive;
+        font-size:60px;
+    
+    }
+    .first_main p{
+    
+        font-size:10px;
 
-.register input[type=text] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.register input[type=password] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.register input[type=email] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.register input[type=date] {
-    font-size: 1.5em;
-    margin-top:20px;
-    text-align: absolute;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.register label {
-    font-size: 1.25em;
-    text-align: center;
-    padding:5px 15px; 
-    color: #6a0963;
-    font-weight: bold;
-    float: center;
-    position:relative;
-  
-  }
-  .register label:after { content: ": " }
+    }
+    .fmain_buttons a{
+        width: 90px;
+        padding:6px 0;
+    }
+    footer .social_icon li a{
+        font-size:21px; 
 
-.register input[type=submit] {
-    color: purple;
-    padding: 12px 23px;
-    font-size: 1em;
-    position: absolute;
-    left: 800px;
-    background-color: rgb(231, 231, 231);
-    border-radius: 12px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
-    top: 600px;
-
-}
-
-
-
-.contact{
-    padding-top:0px;
-}
-.contactTitle{
-    font-size:1.7em;
-    letter-spacing: 1px;
-    margin-bottom:0px;
-}
-
-.contact input[type=text] {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.contact input[type=password] {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.contact input[type=email] {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: center;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.contact input[type=date] {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: absolute;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.contact textarea {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: absolute;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.contact label {
-    font-size: 1.25em;
-    margin-top:10px;
-    text-align: center;
-    padding:5px 15px; 
-    color: #6a0963;
-    font-weight: bold;
-    float: center;
-    position:relative;
-  
-  }
-  .contact label:after { content: ": " }
-
-.contact input[type=submit] {
-    color: purple;
-    padding: 12px 23px;
-    font-size: 0.75em;
-    position: absolute;
-    left: 800px;
-    background-color: rgb(231, 231, 231);
-    border-radius: 12px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 8px 16px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
-    top: 800px;
+    
+    }
+    footer p{
+        font-size: 9px;
+    }
 
 }
