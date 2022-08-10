@@ -6,30 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Un site smecher</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
   </head>
-  <body>
+  <body class="first-page">
 
     <header>
-        <nav>
-            <h2 class="logo">Inesc <span>Erik</span></h2>
-             <ul>
-                 <li><a href="index.html">HOME</a></li>
-                 <li><a href="#">What is a CV?</a></li>
-                 <li><a href="#">CONTACT</a></li>
+        <nav class="navbar">
+
+            <h2 class="logo"><a href="cvMainPage.html">Inesc <span>Erik</span></a></h2>
+
+             <ul class="nav-menu">
+                 <!-- <li class="nav-item"><a href="index.html" class=".nav-link">HOME</a></li>
+                 <li class="nav-item"><a href="cvexplication.html" class=".nav-link">What is a CV?</a></li>
+                 <li class="nav-item"><a href="contact.html" class=".nav-link">CONTACT</a></li> -->
+                 <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                 <li class="nav-item"><a href="cvexplication.html" class="nav-link">What is a CV?</a></li>
+                 <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
             </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
          </nav>
+        
     </header>
+    
     <main>
         <div class="first_main">
               <h1>Curriculum vitae</h1>
-              <p>Let's create your CV!</p>
+              <p>Let's create your <span>CV!</span></p>
               <div class="fmain_buttons">
                 <a href="#" type="button"><span></span>Login</a>
-                <a href="#" type="button"><span></span>Sing-in</a>
+                <a href="#" type="button"><span></span>Sing in</a>
               </div>
               
         </div>
-    </main>
+    </main> 
     <footer>
         <ul class="social_icon">
             <li>
