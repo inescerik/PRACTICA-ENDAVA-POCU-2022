@@ -277,7 +277,7 @@ footer p {
 
 }
 .text-contact:hover{
-  border: 3px solid red;
+  border: 3px solid #ea1538;
   transition:2s;
 }
 .text-contact span{
@@ -286,9 +286,9 @@ footer p {
 .contactForm form input,
 form textarea {
 
+  padding:10px;
   border: none;
   outline:none;
-  padding:1.5px;
   font-size:16px;
   background: rgba(255,255,255,0.2);
   color:#fff;
@@ -328,7 +328,7 @@ form textarea {
   position: absolute;
   top: 0;
   left: 0;
-  background: red;
+  background: #ea1538;
   z-index: -1;
   transition: 0.5s;
 }
@@ -343,14 +343,13 @@ form textarea {
 /* PROFILE PAGE */
 
 
- .profile-page{
+.profile-page{
   display:flex;
   flex-direction: column;
   background: linear-gradient(to right,#a8d4d3 20%, white 40%);
 }
 
- .profileMain {
-
+.profileMain {
   display:flex;  
   padding: auto;
   padding-top: 100px;
@@ -358,11 +357,10 @@ form textarea {
   flex-direction: row;
   align-items:flex-end;
   justify-content: center;
-  gap:100px;
-  letter-spacing:1.5px;
-  font-weight: bold;
-  /* color:rgb(27, 170, 186); */
-  color: rgb(29, 113, 128);;
+    gap:100px;
+    letter-spacing:1.5px;
+    font-weight: bold;
+    color: rgb(29, 113, 128);
 }
 .img-profile{
   width:600px;
@@ -374,8 +372,8 @@ form textarea {
 .profile-text span{
   color:red;
 }
-.profile-text{
 
+.profile-text{
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -383,15 +381,15 @@ form textarea {
   margin-bottom: 6rem;
   margin-top: 1rem;
   justify-content: center;
-
 }
-.profile-text h1{
-  /* font-family: "Kaushan Script", cursive; */
+
+.profile-text h1 {
   font-size:60px;
   letter-spacing: 3.5px;
   margin-bottom: 5px;
 }
-.profile-text h2{
+
+.profile-text h2 {
   font-size:30px;
   letter-spacing: 3.5px;
 }
@@ -400,7 +398,6 @@ form textarea {
   line-height: 30px;
 }
 .profile-button a {
-
   font-size:20px;
   letter-spacing: 2px;
   width: 150px;

@@ -28,7 +28,7 @@ const experiences= [
         endDate: "27/05/2022",
       },
       {
-        id: 2,
+        id: 3,
         name: "Practice",
         description: "SUMMER PRACTICE POCU PROGRAM ENDAVA.",
         startDate: "11/07/2022",
@@ -43,7 +43,6 @@ function generateExperienceCard(experience){
 
     const experienceName = document.createElement("p");
     experienceName.innerText = experience.name;
-    
     
     const experienceDescription = document.createElement("p");
     experienceDescription.innerText = experience.description;
