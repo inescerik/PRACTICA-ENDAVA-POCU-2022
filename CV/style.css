@@ -1,35 +1,35 @@
-/* @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap'; */
-
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: "Poppins", sans-serif;
-
 }
+
 :root {
   --clr-primary: #a8d4d3;
-  /* --clr-secondary:#E7C8AC; */
   --clr-secondary: #82cbca;
 }
 
 body {
   background-color: var(--clr-primary);
 }
+
 header{
   background-color: var(--clr-secondary);
 }
+
 .navbar li{
   list-style: none;
 }
+
 .navbar a{
   color:white;
   text-decoration: none;
   font-weight: bold;
 }
+
 .navbar{
   min-height: 90px;
   display:flex;
@@ -37,27 +37,32 @@ header{
   align-items: center;
   padding: 10px 30px;
 }
+
 .nav-menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap:80px;
 }
+
 .nav-branding{
   font-size: 2rem;
 }
+
 .nav-link{
   transition: 0.7s ease;
 }
+
 .nav-link:hover{
-  color:red;
+  color:#ea1538;
 }
+
 .hamburger{
   display:none;
   cursor:pointer;
 }
-.bar{
 
+.bar{
   display: block;
   width: 25px;
   height: 2px;
@@ -66,7 +71,6 @@ header{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* footer */
 
@@ -79,16 +83,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 footer .social_icon {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
+
 footer .social_icon li {
   list-style: none;
 }
+
 footer .social_icon li a {
   font-size: 30px;
   color: white;
@@ -97,9 +103,11 @@ footer .social_icon li a {
   justify-content: space-between;
   transition: 0.5s;
 }
+
 footer .social_icon li a:hover {
   transform: translateY(-10px);
 }
+
 footer p {
   color: white;
   text-align: center;
@@ -107,11 +115,12 @@ footer p {
   font-size: 15px;
 }
 
-
 /* Main page */
+
 .first-page span {
   color: #ea1538;
 }
+
 .cvexplication-page span{
   color: #ea1538;
 }
@@ -123,23 +132,27 @@ footer p {
   padding-top: 225px;
   margin-bottom: 225px;
 }
+
 .first_main h1 {
   font-family: "Kaushan Script", cursive;
-
   font-size: 100px;
 }
+
 .first_main p {
   font-size: 50px;
   font-weight: bold;
 }
+
 .first_main a {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
 }
+
 .fmain_buttons {
   margin: 70px auto 0;
 }
+
 .fmain_buttons a {
   width: 150px;
   text-decoration: none;
@@ -152,29 +165,30 @@ footer p {
   z-index: 1;
   transition: color 0.5s;
 }
+
 .fmain_buttons a span {
   width: 0%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background: red;
+  background: #ea1538;
   z-index: -1;
   transition: 0.5s;
 }
+
 .fmain_buttons a:hover span {
   width: 100%;
 }
+
 .fmain_buttons a:hover {
   color: white;
 }
 
-
-
 /* CV-PAGE */
+
 .cv_main {
     display:flex;
-
     color: white;
     padding:auto;
     padding-top: 150px;
@@ -184,32 +198,30 @@ footer p {
     justify-content: center;
     gap:100px;
   }
+
   .cv_main h1 {
     font-family: "Kaushan Script", cursive;
     font-size: 70px;
-
   }
-  .cv_main p {
 
+  .cv_main p {
     display:flex;
     font-size: 30px;
     font-weight: bold;
-
   }
+
   .cv_main span{
     font-family: "Kaushan Script", cursive;
   }
+
   .video {
     width:550px;
     height: 500px;
- 
-    
   }
 
 /* Contact Page */
 
 .cv_contact {
-
     display:flex;
     color: white;
     padding: auto;
@@ -221,10 +233,13 @@ footer p {
     gap:100px;
     letter-spacing:1.5px;
   }
+
   .logo span{
-    color:red;
+    color:#ea1538;
   }
+
   /* partea stanga */
+
   .contact-icon{
     border: 3px solid rgba(255,255,255,0.2);
     border-radius: 20%;
@@ -232,10 +247,12 @@ footer p {
     padding-left: 30px;
     padding-right: 30px;
   }
+
 .contact-icon:hover{
-  border: 3px solid red;
+  border: 3px solid #ea1538;
   transition: 2s;
 }
+
  .contact-icon ul li  {
     margin-right: 10px;
     list-style-type: none;
@@ -247,45 +264,44 @@ footer p {
     margin-left: 1rem;
     color: white;
     text-decoration: none;
-
   }
+
   .cv_contact ul li a {
     color: white;
     text-decoration: none;
     list-style-type: none;
     font-weight: bold;
-    
   }
+
   .cv_contact ul li  a:hover {
-    color: red;
+    color: #ea1538;
     transition: 0.3s;
-    
   }
 
 /* partea dreapta */
+
 .text-contact {
-
-     border: 3px solid rgba(255,255,255,0.2); 
+    border: 3px solid rgba(255,255,255,0.2); 
     border-radius: 20%;
-     padding: 20px;
-     padding-top:-5px;
-     padding-bottom: 5px;
-     display: flex;
-      flex-direction: column;
-     align-items: center;
-
-
+    padding: 20px;
+    padding-top:-5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .text-contact:hover{
   border: 3px solid #ea1538;
   transition:2s;
 }
+
 .text-contact span{
   color:#ea1538;
 }
+
 .contactForm form input,
 form textarea {
-
   padding:10px;
   border: none;
   outline:none;
@@ -296,16 +312,21 @@ form textarea {
   margin-top: 0.7rem;
   border-radius: 10px;
 }
+
 .contactForm form textarea{
   resize: none;
   height:150px;
 }
+
 .contactForm form .contact_button{
   display: inline-block;
   background: var(--clr-primary);
 }
 
-
+ ::placeholder{
+  color:var(--clr-secondary);
+  opacity: 1;
+}
 
 .contact_button a {
   width: 150px;
@@ -316,7 +337,7 @@ form textarea {
   border: 2px solid rgba(255,255,255,0.2);
   position: relative;
   text-align: center;
-    margin-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
   margin-top: 0.7rem;
   z-index: 1;
   transition: color 0.5s;
@@ -332,16 +353,16 @@ form textarea {
   z-index: -1;
   transition: 0.5s;
 }
+
 .contact_button a:hover span {
   width: 100%;
 }
+
 .contact_button a:hover {
   color: white;
 }
 
-
 /* PROFILE PAGE */
-
 
 .profile-page{
   display:flex;
@@ -357,20 +378,20 @@ form textarea {
   flex-direction: row;
   align-items:flex-end;
   justify-content: center;
-    gap:100px;
-    letter-spacing:1.5px;
-    font-weight: bold;
-    color: rgb(29, 113, 128);
+  gap:100px;
+  letter-spacing:1.5px;
+  font-weight: bold;
+  color: rgb(29, 113, 128);
 }
+
 .img-profile{
   width:600px;
   height:600px;
   object-fit: cover;
-
 } 
 
 .profile-text span{
-  color:red;
+  color:#ea1538;
 }
 
 .profile-text{
@@ -393,10 +414,12 @@ form textarea {
   font-size:30px;
   letter-spacing: 3.5px;
 }
+
 .profile-text p{
   font-size: 20px;
   line-height: 30px;
 }
+
 .profile-button a {
   font-size:20px;
   letter-spacing: 2px;
@@ -422,18 +445,18 @@ form textarea {
   position: absolute;
   top: 0;
   left: 0;
-  background: red;
+  background: #ea1538;
   z-index: -1;
   transition: 0.5s;
 }
+
 .profile-button a:hover span {
   width: 100%;
 }
+
 .profile-button a:hover {
   color: var(--clr-secondary);
 }
-
-
 
 /* Experience-page */
 
@@ -449,7 +472,6 @@ form textarea {
   letter-spacing: 1.5px;
 }
 
-
 #experiencesContainer{
   padding:auto;
   margin-top: 200px;
@@ -458,83 +480,842 @@ form textarea {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
- 
 }
+
 .cardContainer{
   padding: 35px;
   color: rgb(29, 113, 128);
   border: 6px solid var(--clr-primary);
   border-radius: 20%;
 }
+
 .cardContainer:hover{
-  border: 3px solid red;
+  border: 3px solid #ea1538;
   transition: 2s;
-
 }
+
 #experiencesContainer p{
-  
-    font-size: 20px;
-    line-height: 30px;
-  
+  font-size: 20px;
+  line-height: 30px;
 }
 
+/*  Education page */
 
-
-
-
-
-
-/* Media screen */
-@media screen and (min-width: 801px) and (max-width: 1300px) {
-  .logo {
-    font-size: 25px;
-  }
-  nav ul li {
-    padding: 5px 5px;
-  }
-  .first_main h1 {
-    font-size: 80px;
-  }
-  .first_main p {
-    font-size: 25px;
-  }
-  .fmain_buttons a {
-    width: 120px;
-    padding: 10px 0;
-  }
-  footer .social_icon li a {
-    font-size: 30px;
-  }
-  footer p {
-    font-size: 10px;
-  }
+.educationMain{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 108px;
+  margin-bottom: 108px;
 }
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  .logo {
-    font-size: 18px;
+
+.education-page{
+  background-image: url('educationbck.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.chenar1{
+  padding: 35px;
+  color: rgb(29, 113, 128);
+  border: 6px solid var(--clr-primary);
+  border-radius: 20%;
+  width: fit-content;
+  width:500px;
+  margin:auto;
+}
+
+.chenar1:hover{
+  border: 2px solid #ea1538;
+  transition: 0.3s;
+}
+
+.img-education{
+  width:200px;
+  height:200px;
+  object-fit: cover;
+  margin:5px;
+  margin-top: 10px;
+}
+
+.education-text ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 0;
+  color: rgb(29, 113, 128);
+  text-decoration: none;
+}
+
+.educationMain h3{
+  color: rgb(29, 113, 128);
+}
+
+.education-text ul li a {
+  color: rgb(29, 113, 128);
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.education-text ul li  a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+/* Media querrys */
+
+@media screen and (max-width: 600px) {
+
+  /*  PROFILE MAIN  */
+
+  .profileMain {
+    margin:auto;
+    gap:30px;
+    letter-spacing:1px;
+    margin-top:120px;
+    margin-bottom: 120px;
+    
   }
-  nav ul li {
-    padding: 2px 2px;
+  
+  .img-profile{
+    width:270px;
+    height:270px;
+    object-fit: cover;
+    margin-bottom: auto;
+  } 
+
+  .profile-text{
+    padding: 2px;
+    margin: auto;
   }
-  .first_main h1 {
-    font-size: 70px;
+  
+  .profile-text h1 {
+    font-size:25px;
+    letter-spacing: 1px;
+    margin: auto;
+
   }
-  .first_main p {
-    font-size: 20px;
+  
+  .profile-text h2 {
+    font-size:17px;
+    letter-spacing: 1px;
+    margin: auto;
+
   }
-  .fmain_buttons a {
+  
+  .profile-text p{
+    font-size: 10x;
+    line-height: 20px;
+    margin: auto;
+
+  }
+  
+  .profile-button a {
+    font-size:15px;
+    letter-spacing: 1px;
     width: 100px;
-    padding: 8px 0;
+    padding: 7px 0;
+    margin: auto;
   }
-  footer .social_icon li a {
-    font-size: 20px;
-  }
-  footer p {
-    font-size: 9px;
-  }
+    
+  /* EDUCATION */
+
+.educationMain{
+  margin:auto;
+  margin-top: 108px;
+  margin-bottom: 108px;
+  flex-direction: column;
+  gap:20px;
 }
 
-@media screen and (max-width: 580px) {
+.educationMain h4{
+  font-size: 15px;
+}
+
+.chenar1{
+  padding: 25px;
+  width:350px;
+}
+
+.img-education{
+  width:150px;
+  height:150px;
+  object-fit: cover;
+  margin:5px;
+  margin-top: 10px;
+}
+
+/* EXPERINECE */
+
+#experiencesContainer{
+  margin:auto;
+  flex-direction: column;
+  gap:20px;
+  width: 400px;
+}
+
+.cardContainer{
+  padding: 25px;
+}
+
+#experiencesContainer p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* CV-explication */
+
+.cv_main {
+  margin: auto;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  gap:45px;
+  margin-left: 20px;
+}
+
+.cv_main h1 {
+  font-size: 30px;
+}
+
+.cv_main p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.video {
+  width:250px;
+  height: 250px;
+}
+
+/* Contact Page */
+
+.cv_contact {
+  padding-top: 110px;
+  padding-bottom: 110px; 
+  gap:60px;
+  letter-spacing:1.5px;
+  flex-direction: column-reverse;
+}
+
+/* partea stanga */
+
+.contact-icon{
+  width:540px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-icon:hover{
+border: 3px solid #ea1538;
+transition: 2s;
+}
+
+.contact-icon ul li  {
+  margin-right: 10px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 10px;
+  margin:0.5rem;
+}
+
+/* partea dreapta */
+
+.text-contact {
+  padding: 20px;
+  padding-top:-5px;
+  padding-bottom: 5px;
+}
+
+.contactForm form input,
+form textarea {
+  font-size:12px;
+}
+
+.contactForm form textarea{
+  resize: none;
+  height:120px;
+}
+
+.text-contact{
+  font-size:13px;
+}
+
+.contact_button a {
+  width: 120px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0;
+
+}
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .profileMain {
+    margin:auto;
+    gap:30px;
+    letter-spacing:1px;
+    margin-top:130px;
+    margin-bottom: 130px;
+  }
+  
+  .img-profile{
+    width:350px;
+    height:350px;
+    object-fit: cover;
+    margin-bottom: auto;
+  } 
+  .profile-text{
+    padding: 5px;
+    margin: auto;
+  }
+  
+  .profile-text h1 {
+    font-size:28px;
+    letter-spacing: 1px;
+    margin: auto;
+  }
+  
+  .profile-text h2 {
+    font-size:19px;
+    letter-spacing: 1px;
+    margin: auto;
+  }
+  
+  .profile-text p{
+    font-size: 13x;
+    line-height: 20px;
+    margin: auto;
+  }
+  
+  .profile-button a {
+    font-size:18px;
+    letter-spacing: 1px;
+    width: 90px;
+    padding: 7px 0;
+    margin: auto;
+
+  }
+ 
+/* EDUCATION */
+
+.educationMain{
+  margin:auto;
+  margin-top: 108px;
+  margin-bottom: 108px;
+  flex-direction: column;
+  gap:20px;
+}
+
+.educationMain h4{
+  font-size: 15px;
+}
+
+.chenar1{
+  padding: 25px;
+  width:380px;
+}
+
+.img-education{
+  width:160px;
+  height:160px;
+  object-fit: cover;
+  margin:5px;
+  margin-top: 10px;
+}
+
+
+/* EXPERINECE */
+
+#experiencesContainer{
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: space-around;
+  text-align: center;
+  width: 420px;
+}
+
+.cardContainer{
+  padding: 25px;
+  width: 420px;
+  height: 200px;
+}
+
+#experiencesContainer p{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* CV-explication */
+
+.cv_main {
+  margin: auto;
+  padding-top: 165px;
+  padding-bottom: 165px;
+  gap:40px;
+  margin-left: 30px;
+}
+
+.cv_main h1 {
+  font-size: 32px;
+}
+
+.cv_main p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.video {
+  width:400px;
+  height: 400px;
+}
+
+/* Contact Page */
+
+.cv_contact {
+  padding-top: 110px;
+  padding-bottom: 110px; 
+  gap:60px;
+  letter-spacing:1.5px;
+  flex-direction: column-reverse;
+}
+
+/* partea stanga */
+
+.contact-icon{
+
+  width:560px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-icon:hover{
+  border: 3px solid #ea1538;
+  transition: 2s;
+}
+
+.contact-icon ul li  {
+  margin-right: 10px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 10px;
+  margin:0.5rem;
+}
+
+/* partea dreapta */
+
+.text-contact {
+  padding: 25px;
+  padding-top:-5px;
+  padding-bottom: 5px;
+}
+
+.contactForm form input,
+form textarea {
+  font-size:16px;
+}
+
+.contactForm form textarea{
+  resize: none;
+  height:130px;
+}
+
+.text-contact{
+  font-size:15px;
+}
+
+.contact_button a {
+  width: 120px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0;
+
+}
+
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width:992px)  { 
+
+  .profileMain {
+    margin:auto;
+    gap:30px;
+    letter-spacing:1px;
+    margin-top:130px;
+    margin-bottom: 130px;
+  }
+  
+  .img-profile{
+    width:400px;
+    height:400px;
+    object-fit: cover;
+    margin-bottom: auto;
+  } 
+
+  .profile-text{
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .profile-text h1 {
+    font-size:30px;
+    letter-spacing: 1.5px;
+  }
+  
+  .profile-text h2 {
+    font-size:20px;
+    letter-spacing: 1.5px;
+  }
+  
+  .profile-text p{
+    font-size: 15x;
+    line-height: 25px;
+    margin: auto;
+  }
+  
+  .profile-button a {
+    font-size:18px;
+    letter-spacing: 1px;
+    width: 90px;
+    padding: 7px 0;
+    margin: auto;
+  }
+
+  /* EDUCATION */
+
+.educationMain{
+  margin:auto;
+  margin-top: 108px;
+  margin-bottom: 108px;
+  flex-direction: column;
+  gap:20px;
+}
+
+.educationMain h4{
+  font-size: 17px;
+}
+
+.chenar1{
+  padding: 25px;
+  width:400px;
+}
+
+.img-education{
+  width:170px;
+  height:170px;
+  object-fit: cover;
+  margin:5px;
+  margin-top: 10px;
+}
+
+/* EXPERINECE */
+
+#experiencesContainer{
+ 
+  margin:auto;
+  margin-top: 165px;
+  margin-bottom: 165px;
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.cardContainer{
+  padding: 25px;
+  width: 500px;
+  height: 250px;
+  margin: auto;
+}
+
+#experiencesContainer p{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* CV-explication */
+
+.cv_main {
+  margin: auto;
+  padding-top: 185px;
+  padding-bottom: 185px;
+  gap:65px;
+  margin-left: 30px;
+}
+
+.cv_main h1 {
+  font-size: 34px;
+}
+
+.cv_main p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.video {
+  width:400px;
+  height: 400px;
+}
+
+
+/* Contact Page */
+
+.cv_contact {
+  padding-top: 110px;
+  padding-bottom: 110px; 
+  gap:60px;
+  letter-spacing:1.5px;
+  flex-direction: row;
+}
+
+/* partea stanga */
+
+.contact-icon{
+  height: 610px;
+  width:560px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contact-icon ul li  {
+  margin:auto;
+  align-items: center;
+  margin-right: 10px;
+  padding: 25px 10px;
+  margin:0.5rem;
+}
+
+/* partea dreapta */
+
+.text-contact {
+  height: 610px;
+  width:560px;
+  padding: 25px;
+  padding-top:-5px;
+  padding-bottom: 5px;
+}
+
+
+.contactForm form input,
+form textarea {
+font-size:16px;
+}
+
+.contactForm form textarea{
+resize: none;
+height:130px;
+}
+
+.text-contact{
+  font-size:15px;
+}
+
+.contact_button a {
+  width: 120px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0;
+
+}
+}
+
+
+
+
+@media screen and (min-width: 993px) and (max-width:1200px)  { 
+
+  .profileMain {
+    margin:auto;
+    gap:30px;
+    letter-spacing:1px;
+    margin-top:130px;
+    margin-bottom: 130px;
+  }
+  
+  .img-profile{
+    width:500px;
+    height:500px;
+    object-fit: cover;
+    margin-bottom: auto;
+  } 
+
+  .profile-text{
+    padding: 15px;
+    margin: auto;
+  }
+  
+  .profile-text h1 {
+    font-size:35px;
+    letter-spacing: 1.5px;
+  }
+  
+  .profile-text h2 {
+    font-size:25px;
+    letter-spacing: 1.5px;
+  }
+  
+  .profile-text p{
+    font-size: 17x;
+    line-height: 30px;
+    margin: auto;
+  }
+  
+  .profile-button a {
+    font-size:20px;
+    letter-spacing: 1.5px;
+    width: 100px;
+    padding: 10px 0;
+    margin: auto;
+  }
+
+  /* EDUCATION */
+
+  .educationMain{
+    margin:auto;
+    margin-top: 108px;
+    margin-bottom: 108px;
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .educationMain h4{
+    font-size: 20px;
+  }
+
+  .chenar1{
+    padding: 25px;
+    width:450px;
+  }
+  
+  
+  .img-education{
+    width:180px;
+    height:180px;
+    object-fit: cover;
+    margin:5px;
+    margin-top: 10px;
+  }
+
+  /* Experience */
+
+  #experiencesContainer{
+    margin:auto;
+    margin-top: 165px;
+    margin-bottom: 165px;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .cardContainer{
+    padding: 25px;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+  }
+  
+  #experiencesContainer p{
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  /* CV-explication */
+
+.cv_main {
+  margin: auto;
+  padding-top: 185px;
+  padding-bottom: 185px;
+  gap:65px;
+  margin-left: 30px;
+}
+
+.cv_main h1 {
+  font-size: 34px;
+}
+
+.cv_main p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.video {
+  width:450px;
+  height: 450px;
+}
+
+/* Contact Page */
+
+.cv_contact {
+  padding-top: 110px;
+  padding-bottom: 110px; 
+  gap:60px;
+  letter-spacing:1.5px;
+  flex-direction: row;
+}
+
+/* partea stanga */
+
+.contact-icon{
+  height: 610px;
+  width:560px;
+  padding-left: 30px;
+  padding-right: 30px; 
+}
+
+.contact-icon ul li  {
+  align-items: center;
+  margin-right: 10px;
+  padding: 25px 10px;
+  margin:0.5rem;
+  font-size:20px;
+}
+
+/* partea dreapta */
+
+.text-contact {
+  height: 610px;
+  width:560px;
+  padding: 25px;
+  padding-top:-5px;
+  padding-bottom: 5px;
+}
+
+.contactForm form input,
+  form textarea {
+  font-size:19px;
+}
+
+.contactForm form textarea{
+  resize: none;
+  height:130px;
+}
+
+.text-contact{
+  font-size:17px;
+}
+
+.contact_button a {
+  margin:auto;
+  width: 120px;
+  padding: 10px 0;
+
+}
+
+}
+
+
+/* Partea de navbar */
+@media screen and (max-width: 900px) {
+
   .logo {
     font-size: 20px;
   }
@@ -545,15 +1326,19 @@ form textarea {
     flex-direction: column;
     margin-left: 300px; 
   }
+
    .hamburger.active .bar:nth-child(2){
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1){
    transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
    }
+
    .nav-menu{
     position: fixed;
     left: -100%;
@@ -565,27 +1350,12 @@ form textarea {
     text-align: center;
     transition: 0.3s;
    }
-  .nav-item{
-  margin: 16px 0;
-  }
-  .nav-menu.active{
-    left:0;
-  } 
 
-  .first_main h1 {
-    font-size: 60px;
-  }
-  .first_main p {
-    font-size: 10px;
-  }
-  .fmain_buttons a {
-    width: 90px;
-    padding: 6px 0;
-  }
-  footer .social_icon li a {
-    font-size: 21px;
-  }
-  footer p {
-    font-size: 9px;
-  }
+   .nav-item{
+    margin: 16px 0;
+    }
+
+    .nav-menu.active{
+      left:0;
+    } 
 }

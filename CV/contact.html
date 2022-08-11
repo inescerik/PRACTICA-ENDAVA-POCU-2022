@@ -19,9 +19,11 @@
                  <!-- <li class="nav-item"><a href="index.html" class=".nav-link">HOME</a></li>
                  <li class="nav-item"><a href="cvexplication.html" class=".nav-link">What is a CV?</a></li>
                  <li class="nav-item"><a href="contact.html" class=".nav-link">CONTACT</a></li> -->
-                 <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                 <li class="nav-item"><a href="cvMainPage.html" class="nav-link">Home</a></li>
+                 <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+                 <li class="nav-item"><a href="experience.html" class="nav-link">Experience</a></li>
                  <li class="nav-item"><a href="cvexplication.html" class="nav-link">What is a CV?</a></li>
-                 <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
+                 <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
               <span class="bar"></span>
@@ -51,8 +53,8 @@
                     </li>
                     <br>
                     <li>
-                        <h3><a href="https://ro.yahoo.com/?p=us" target="_blank"><ion-icon name="aperture-outline"></ion-icon></ion-icon> Website:</a></h2>
-                      <h4>inescerik@yahoo.com</h4>
+                        <h3><a href="https://ro.yahoo.com/?p=us" target="_blank"><ion-icon name="aperture-outline"></ion-icon> Website:</a></h2>
+                      <h4>www.inescerik.com</h4>
                     </li>
                 </ul>
             </div>
@@ -70,17 +72,15 @@
                         <br>        
                         <input type="email" id="e-mail" placeholder="E-mail" required>
                         <br>
-                        <textarea cols="20" rows="10" id="text-message" placeholder="Your Message" required></textarea>
+                        <textarea cols="20" rows="10" id="text-message" placeholder="Your Message" disabled></textarea>
                         <br>
-                        <!-- <label for="input">Not robot</label>
-                        <input type="checkbox" > -->
+                        <!-- <label for="input">Not robot</label> -->
+                        <!-- <input id="input-contact" type="checkbox" onchange="readLocalStorage()"> -->
                         <br>
-                        <!-- <input type="submit" value="Submit" class="contact_button"> -->
                     </form>
-                    <div class="contact_button">
-                        <a href="#" type="button"><span></span>Send</a>
-                       
-                    </div>
+                    <div class="contact_button" >
+                        <a href="#" onclick="saveLocalStorage()" type="button"  onClick='saveLocalStorage()' ><span></span>Send</a>
+                   </div>
                 </div>
             </div>  
         </div>

@@ -79,16 +79,33 @@ populateExperiencesContainer(experiences);
 
 
 // localstorage -contact.
+// const contactBtn = document.getElementsByClassName("contactBtn");
+//let inputContact = document.getElementsByClassName("contactBtn");
 
-const getName = document.querySelector('#full-name');
-const getEmail = document.querySelector('#e-mail');
-const getMessage = document.querySelector('#text-message');
-const contactBtn = document.querySelector(".contactBtn");
+function saveLocalStorage(){
+  let getName = document.getElementById('full-name').value;
+  let getEmail = document.getElementById('e-mail').value;
+  let getMessage = document.getElementById('text-message');
+  // let getMessage = document.getElementById('text-message').value;
+  if( getName.length && getEmail.length ){
+    localStorage.setItem("name",getName);
+    localStorage.setItem("E-mail",getEmail);
+    getMessage.textContent ="Your name is:\n" + localStorage.getItem("name")  + " \nYour E-mail is:\n" + localStorage.getItem("E-mail");
+  }
+  else{
+    alert("Please introduce your data.");
+  }
+  // localStorage.setItem("Message",getMessage);
+  // console.log("salut");
+}
 
+// function readLocalStorage(){
+//   let getMessage = document.getElementById('text-message');
+//   if(localStorage.getItem("name").length && localStorage.getItem("E-mail").length){
+//       getMessage.textContent ="Your name is: " + localStorage.getItem("name") +  " and your E-mail is:" + localStorage.getItem("E-mail");
+//   }
+//   else{
+//     alert("Please introduce your data.");
+//   }
 
-// contactBtn.addEventListener('click', function(){
-//     const name =getName.value;
-//     const email = getEmail.value;
-//     console.log(name);
-//     console.log(emal);
-// })
+// }
